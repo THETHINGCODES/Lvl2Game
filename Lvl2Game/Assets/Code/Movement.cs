@@ -2,31 +2,62 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
-public class Movements : MonoBehaviour
+public class Movement : MonoBehaviour
 {
-    Rigidbody rb;
-    Vector2 _movePlayer;
+
+
+	
+   
+ 
+    float _speed = 20.0f;
+    float velocity;
+    Vector2 _movementInputVector, _lookInputVector;
+    CharacterController _characterController;
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+      _characterController = GetComponent<CharacterController>();  
+      
     }
-   
-    void OnMove(InputValue iv)
+    void FixedUpdate()
     {
-        _movePlayer = iv.Get<Vector2>();
     }
-   
-   
-    void OnFire()
-    {
-        Debug.Log("Boom, Bang, Blam!");
-    }
+    
     // Update is called once per frame
     void Update()
     {
-        Vector3 movement = new Vector3(_movePlayer.x, 0.0f, _movePlayer.y);
-        rb.AddForce(movement * 1.0f);
+        MovePlayer();
+
+
     }
+    void MovePlayer()
+    {
+        Vector3 move = new Vector3(_movementInputVector.x, 0.0f, _movementInputVector.y);
+        move = this.transform.TransformDirection(move);
+        _characterController.SimpleMove(move * _speed);
+    
+       
+    }
+
+    void OnMove(InputValue iv)
+    {
+        _movementInputVector = iv.Get<Vector2>();
+    }
+    void OnLook(InputValue iv)
+    {
+        _lookInputVector = iv.Get<Vector2>();
+    }
+     void OnTriggerEnter(Collider col)
+    {
+        if(col.CompareTag("sceneend"))
+        {
+            Debug.Log("SceneEnd");
+            SceneManager.LoadScene("scene1");
+        }
+       
+        
+    } 
+    
 }
