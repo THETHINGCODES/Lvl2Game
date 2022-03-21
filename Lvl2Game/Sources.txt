@@ -1,0 +1,2 @@
+Previous code from projects
+https://forum.unity.com/threads/load-a-scene-randomly-out-of-a-list-of-scenes.55199/

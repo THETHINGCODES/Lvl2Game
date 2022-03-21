@@ -36,10 +36,13 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Code\Movement.cs" />
-     <Compile Include="Assets\Code\threetoone.cs" />
-     <Compile Include="Assets\Code\move1.cs" />
      <Compile Include="Assets\Code\move2.cs" />
+     <Compile Include="Assets\Code\move4.cs" />
+     <Compile Include="Assets\Code\Movement.cs" />
+     <Compile Include="Assets\Code\move1.cs" />
+     <Compile Include="Assets\Code\move5.cs" />
+     <Compile Include="Assets\Code\NewBehaviourScript.cs" />
+     <Compile Include="Assets\Code\3to1.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -613,11 +616,17 @@
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>C:\Users\RossMurphyLM19\GitHub\Lvl2Game\Lvl2Game\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+        <HintPath>C:\Users\RossMurphyLM19\GitHub\Lvl2Game\Lvl2Game\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>C:\Users\RossMurphyLM19\GitHub\Lvl2Game\Lvl2Game\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
         <HintPath>C:\Users\RossMurphyLM19\GitHub\Lvl2Game\Lvl2Game\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+        <HintPath>C:\Users\RossMurphyLM19\GitHub\Lvl2Game\Lvl2Game\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
         <HintPath>C:\Users\RossMurphyLM19\GitHub\Lvl2Game\Lvl2Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
@@ -627,6 +636,12 @@
     </Reference>
     <Reference Include="Unity.TextMeshPro">
         <HintPath>C:\Users\RossMurphyLM19\GitHub\Lvl2Game\Lvl2Game\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder">
+        <HintPath>C:\Users\RossMurphyLM19\GitHub\Lvl2Game\Lvl2Game\Library\ScriptAssemblies\Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+        <HintPath>C:\Users\RossMurphyLM19\GitHub\Lvl2Game\Lvl2Game\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>C:\Users\RossMurphyLM19\GitHub\Lvl2Game\Lvl2Game\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>

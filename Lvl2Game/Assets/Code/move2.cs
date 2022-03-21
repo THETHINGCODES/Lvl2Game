@@ -54,7 +54,18 @@ public class move2 : MonoBehaviour
         if(col.CompareTag("sceneend"))
         {
             Debug.Log("SceneEnd");
-            SceneManager.LoadScene("scene3");
+            // select random zone by name
+            string[] zones = new string[5] { "scene1", "scene2", "scene3", "scene4", "scene5" };
+            int random = Random.Range(0, 5);
+            Application.LoadLevel(zones[random]);
+        }
+        if(col.CompareTag("Finish"))
+        {
+            Debug.Log("Death");
+            // select random zone by name
+            string[] zones = new string[5] { "scene1", "scene2", "scene3", "scene4", "scene5" };
+            int random = Random.Range(0, 5);
+            Application.LoadLevel(zones[random]);
         }
        
         
