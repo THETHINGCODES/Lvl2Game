@@ -67,6 +67,12 @@ public class Movement : MonoBehaviour
             int random = Random.Range(0, 5);
             Application.LoadLevel(scenes[random]);
         }
+        if(col.CompareTag("GameController"))
+        {
+            Debug.Log("TP");
+            // select random zone by name
+           SceneManager.LoadScene("scene4ex");
+        }
        
         
     } 

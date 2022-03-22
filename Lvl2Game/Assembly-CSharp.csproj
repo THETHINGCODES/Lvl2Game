@@ -36,13 +36,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Code\move5.cs" />
      <Compile Include="Assets\Code\move2.cs" />
      <Compile Include="Assets\Code\move4.cs" />
      <Compile Include="Assets\Code\Movement.cs" />
      <Compile Include="Assets\Code\move1.cs" />
-     <Compile Include="Assets\Code\move5.cs" />
-     <Compile Include="Assets\Code\NewBehaviourScript.cs" />
-     <Compile Include="Assets\Code\3to1.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
