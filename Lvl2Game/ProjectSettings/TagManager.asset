@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - sceneend
+  - EXIT
+  - PLAY
   layers:
   - Default
   - TransparentFX
